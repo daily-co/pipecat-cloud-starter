@@ -125,7 +125,7 @@ async def bot(args: DailySessionArguments):
     )
 
     try:
-        await main(transport, args.body)
+        await main(transport)
         logger.info("Bot process completed")
     except Exception as e:
         logger.exception(f"Error in bot process: {str(e)}")
