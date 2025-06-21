@@ -119,6 +119,7 @@ async def bot(args: DailySessionArguments):
         DailyParams(
             audio_in_enabled=True,
             audio_out_enabled=True,
+            transcription_enabled=True,
             vad_analyzer=SileroVADAnalyzer(),
         ),
     )
@@ -145,6 +146,7 @@ async def local_daily():
                 params=DailyParams(
                     audio_in_enabled=True,
                     audio_out_enabled=True,
+                    transcription_enabled=True,
                     vad_analyzer=SileroVADAnalyzer(),
                 ),
             )
